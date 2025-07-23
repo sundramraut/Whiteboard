@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Whiteboard App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>📝 Whiteboard</h1>
+  <div class="toolbar">
+    <button onclick="setTool('marker')">Marker</button>
+    <button onclick="setTool('red')">Red</button>
+    <button onclick="setTool('green')">Green</button>
+    <button onclick="setTool('blue')">Blue</button>
+    <button onclick="setTool('yellow')">Yellow</button>
+    <button onclick="setTool('eraser')">Eraser</button>
+    <button onclick="exportAsPNG()">Export PNG</button>
+    <button onclick="exportAsPDF()">Export PDF</button>
+  </div>
+  <canvas id="whiteboard"></canvas>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
